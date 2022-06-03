@@ -1,0 +1,23 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  # Rails server
+  - port: 3000
+    onOpen: open-preview
+  # Redis
+  - port: 6379
+    onOpen: ignore
+
+tasks:
+  - name: Prepare rails and run server
+    init: >
+      bundle install &&
+      bundle exec rails db:create db:migrate
+    command: >
+      ./bin/dev
+
+vscode:
+  extensions:
+    - castwide.solargraph
+    - rebornix.ruby
