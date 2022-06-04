@@ -1,4 +1,5 @@
 <div id="<%= dom_id(@discussion) %>" class="mb-2">
   <h2><%= @discussion.name %></h2>
   <p>Pinned: <%= @discussion.pinned %> | Closed: <%= @discussion.closed %></p>
+  <%= link_to 'Edit', edit_discussion_path(@discussion) %>
 </div>
