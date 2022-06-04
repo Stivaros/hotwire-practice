@@ -12,6 +12,6 @@ class FlashComponent < ViewComponent::Base
       "alert alert-info"
     when "alert"
       "alert alert-warning"
-    end 
+    end
   end
 end

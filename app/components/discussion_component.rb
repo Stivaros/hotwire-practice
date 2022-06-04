@@ -4,5 +4,4 @@ class DiscussionComponent < ViewComponent::Base
   def initialize(discussion:)
     @discussion = discussion
   end
-
 end

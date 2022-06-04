@@ -4,8 +4,8 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Enable dev server in gitpod
-  if ENV['GITPOD_HOST'].present?
-    config.hosts << "3000-#{ENV['GITPOD_WORKSPACE_ID']}.#{ENV['GITPOD_WORKSPACE_CLUSTER_HOST']}"
+  if ENV["GITPOD_HOST"].present?
+    config.hosts << "3000-#{ENV["GITPOD_WORKSPACE_ID"]}.#{ENV["GITPOD_WORKSPACE_CLUSTER_HOST"]}"
   end
 
   # In the development environment your application's code is reloaded any time
