@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Known Issues
+
+### Gitpod
+
+* RVM is pants and the `PATH` & `GEM_PATH` are causing issues

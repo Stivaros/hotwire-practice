@@ -13,6 +13,7 @@ tasks:
   - name: Prepare rails and run server
     init: >
       bundle install &&
+      yarn install &&
       bundle exec rails db:create db:migrate
     command: >
       ./bin/dev
