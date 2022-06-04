@@ -12,9 +12,11 @@
 
   <body>
     <%= render(NavigationComponent.new) %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+
     <div class="container mt-4">
+      <% flash.each do |type, data| %>
+        <%= render(FlashComponent.new(type: type, data: data)) %>
+      <% end %>
       <%= yield %>
     </div>
   </body>
