@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-between align-items-center">
+  <h1>Discussions</h1>
+  <%= link_to 'New discussion', root_path, class: "btn btn-primary" %>
+</div>
+
+<div class="row mt-4">
+  <div class="col">
+    <%= render(DiscussionComponent.with_collection(@discussions)) %>
+  </div>
+</div>
