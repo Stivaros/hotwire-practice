@@ -22,3 +22,4 @@ vscode:
   extensions:
     - castwide.solargraph
     - rebornix.ruby
+    - vortizhe.simple-ruby-erb
