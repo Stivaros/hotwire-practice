@@ -11,8 +11,11 @@
   </head>
 
   <body>
+    <%= render(NavigationComponent.new) %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="container mt-4">
+      <%= yield %>
+    </div>
   </body>
 </html>
