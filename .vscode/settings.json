@@ -1,6 +1,4 @@
 {
-    "terminal.integrated.defaultProfile.linux": "zsh",
     "editor.tabSize": 2,
     "emmet.includeLanguages": {"erb": "html"},
-    "solargraph.commandPath": "/home/gitpod/.rvm/gems/ruby-3.1.2/bin/solargraph"
 }
