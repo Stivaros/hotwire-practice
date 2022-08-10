@@ -9,10 +9,6 @@ ports:
   - port: 6379
     onOpen: ignore
 
-tasks:
-  - name: Prepare PATH for gitpod
-    command: ./bin/gitpod/setup
-
 vscode:
   extensions:
     - castwide.solargraph
