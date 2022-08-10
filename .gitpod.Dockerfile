@@ -11,4 +11,5 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && \
     # Move omz config back into Dockerfile
     mv ~/.zshrc ~/.zshrc_gp && \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended && \
-    curl https://raw.githubusercontent.com/Stivaros/dotfiles/main/.zsh/.zshrc > ~/.zshrc
+    curl https://raw.githubusercontent.com/Stivaros/dotfiles/main/.zsh/.zshrc > ~/.zshrc && \
+    echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION" >> ~/.zshrc
