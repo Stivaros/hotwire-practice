@@ -12,8 +12,9 @@ ports:
 tasks:
   - name: Prepare rails and run server
     init: >
-      echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION" >> ~/.zshrc
-      echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION" >> ~/.bashrc
+      echo "export PATH=$rvm_path/bin:$PATH" >> ~/.zshrc
+      echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION:$rvm_path/gems/$RUBY_VERSION@global" >> ~/.zshrc
+      echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION:$rvm_path/gems/$RUBY_VERSION@global" >> ~/.bashrc
       bundle install &&
       yarn install &&
       bundle exec rails db:create db:migrate
