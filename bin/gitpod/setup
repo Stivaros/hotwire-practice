@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "export PATH=$rvm_path/bin:$PATH" >> ~/.zshrc
+echo "export GEM_PATH=$rvm_path/gems/$RUBY_VERSION:$rvm_path/gems/$RUBY_VERSION@global" >> ~/.zshrc
