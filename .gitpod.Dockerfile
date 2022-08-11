@@ -13,3 +13,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && \
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended && \
     curl https://raw.githubusercontent.com/Stivaros/dotfiles/main/.zsh/.zshrc > ~/.zshrc && \
     echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.zshrc
+
+ENV GEM_HOME=/home/gitpod/.rvm/ruby-3.1.2
+ENV GEM_PATH=$GEM_HOME:$GEM_HOME@global
+ENV PATH=/home/gitpod/.rvm/bin:$PATH
