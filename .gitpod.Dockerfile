@@ -10,4 +10,7 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
   apt-get install -y redis-server && \
   # Install zsh
   apt-get install -y zsh && \
+  # Update git
+  add-apt-repository ppa:git-core/ppa && \
+  apt-get update && sudo apt-get install git && \
   rm -rf /var/lib/apt/lists/*
