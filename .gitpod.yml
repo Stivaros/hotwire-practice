@@ -9,6 +9,10 @@ ports:
   - port: 6379
     onOpen: ignore
 
+tasks:
+  - name: Install zsh
+    command: ./bin/gitpod/install_zsh
+
 vscode:
   extensions:
     - castwide.solargraph
